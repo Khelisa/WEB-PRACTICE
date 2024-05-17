@@ -1,0 +1,73 @@
+.container{
+
+  width: 300px;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 350px;
+  background-color: whitesmoke;
+  opacity: calc(0.7);
+  padding: 20px 20px;
+  border-radius: 4px;
+  font-size: 12px;
+
+
+
+
+}
+.list{
+     font-family:Arial;
+     font-size: 18px;
+     margin-top: 15px;
+     margin-left: 2pxpx;
+     margin-top: 20px;
+}
+
+body{
+  background-attachment: fixed;
+  background-image: url('/background/SOSOSO.jpg');
+  background-size: cover;
+}
+
+#prices{
+  font-family: Arial;
+  font-size:25;
+ margin-top :50px;
+ text-align: center;
+  
+
+}
+
+
+input{
+  width: 311px;
+  border-color:gray;
+}
+
+
+#button{
+  width: 100%;
+  text-align: center;
+  text-decoration:solid;
+  margin-left: 300px;
+  padding: 10px;
+  box-sizing:border-box;
+  font-weight: 100;
+  font-size: medium;
+  background-color:rgb(41, 57, 194);
+  border: none;
+  border-radius: 4px;
+  color:white;
+  margin: 10px;;
+
+
+  
+
+}
+.lables{
+
+  font-weight: bold;
+
+
+
+
+}

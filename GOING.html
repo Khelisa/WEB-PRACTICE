@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VALIDATION</title>
+    <script>
+
+      function ValidateForm(){
+
+        var name=document.getElementById("name").value;
+        var name=document.getElementById("lastname").value;
+
+        if(name =="" || lastname ==""){
+
+          alert(" enter both name and last name");
+          return false;
+        }else
+        return true;
+
+      }
+    </script>
+
+
+  </head>
+
+  <body>
+    <form onsubmit="return ValidateForm()">
+      <label for="name">Name</label>
+      <input type="text" id="name"><br><br>
+
+      <label for="lastname"> Lastname</label>
+      <input type="text" id="lastname"><br><br>
+
+      <input type="submit" value="Login">
+    </form>
+
+
+  </body>
+</html>

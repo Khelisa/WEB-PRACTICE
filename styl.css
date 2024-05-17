@@ -1,0 +1,44 @@
+#username{
+
+  border: 5px solid blue;
+  width: auto;
+  margin: auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 10px;
+
+}
+
+
+.container{
+  background-color: whitesmoke;
+  padding: 30px 30px;
+  border-radius: 4px;
+  margin: auto;
+  opacity: calc(0.7);
+
+}
+#password{
+
+border: 5px solid blue;
+  width: auto;
+  margin: au  bto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+
+#email{
+  border: 5px solid blue;
+  width: auto;
+  margin: au  bto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 2px;
+
+}

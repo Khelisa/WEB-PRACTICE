@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Document</title>
+  <script>
+   function validateForm(){
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+
+    if(username == "" || password == ""){
+      alert("enter both username and password");
+      return false;
+    }else
+      return true;
+   }
+   
+  </script>
+</head>
+<body>
+  <form onsubmit="return validateForm()">
+    <lable >Username</lable>
+    <input type="text" id="username" ><br><br>
+    <label >Password</label>&nbsp;
+    <input type="password" id ="password" ><br><br>
+    <input type="submit"  value="Login">
+    
+  </form>
+  
+</body>
+</html>

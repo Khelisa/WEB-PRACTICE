@@ -1,0 +1,36 @@
+<?php
+
+//renaming parameters with the actual database detail
+
+$servername="localhost";
+$username="username"
+$dbname="monalisa"
+
+$conn=new mysqli($servername,$username,$database);
+
+//cheking connection
+
+if($conn->connect_error){
+  die("connection failled".$connect_error);
+
+  }
+
+
+  //prepare and bind the sql statement
+
+  $stmt=$conn->prepare("insert into users (name,email) values(?,?)");
+
+  $stmt->bind_param("ss",$name,$email)
+
+  $name=$_post['name'];
+  $email=$_post['email'];
+  $stmt->execute();
+
+
+  $stmt->close();
+  $stmt->close();
+
+
+
+
+?>

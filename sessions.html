@@ -1,0 +1,40 @@
+<?php
+
+session_start();
+
+if($_sever['REQUEST_METHOD'] === '_post'){
+   
+
+  $username=$_post['username'];     //get the entered values
+  $password=$_post['password'];
+}
+
+
+//check agaist database
+if(isvalidcredatiais($username,$password)){
+
+  //successful login;creat a session_start
+
+  $_session][]
+
+
+}
+
+?>
+
+<DOCTYPE html>
+  <html>
+
+   <body>
+    <?php
+    $_SESSION["username"] ="monalisa";
+    $_SESSION["password"] ="ABC123";
+    $_SESSION['gender']   ="male"l;
+
+
+    hearder("location:dashboard.php");
+    exit;
+    ?>
+   </body>
+
+  </html>

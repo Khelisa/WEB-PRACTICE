@@ -1,0 +1,88 @@
+<?php
+//replace parameters with your actual database details
+$servername = "localhost";
+$username  = "username";
+$password  ="password"
+$email  = "email";
+$dbname   = "MYfirstdb"
+
+$conn = new mysqli($servername,$usernmae,$password,$email,$dbname);
+//check connection
+if ($conn->connect_error){
+  die("connection failled " . $conn->connect_error);
+}
+  
+//prepare and bind SQL statement
+ $stmt=$conn->prepare("INSERT INTO into users (name,email) VALUES(?,?)");
+
+ $stmt->bind_param("ss",$name,$email);
+
+//set parameters and execute
+ $name =$_post['name'];
+ $email = $_post['email'];
+ $stmt->execute();
+
+
+ echo "new record inserted successfully";
+
+//close statement and connection
+ $stmt->close();
+ $stmt->close();
+
+
+
+?>
+
+<DOCTYPE html>
+  <html>
+    <head>
+
+      <link rel="stylesheet" href="styl.css">
+      <title>STORE DATA</title>
+
+      <script>
+        function validateForm(){
+          var firstname=document.getElementById("username").value;
+          var lastname=document.getElementById("password").value;
+           var gender=document.getElementById("email").value;
+
+
+          if(fairstnmar="" || lastname ="") && ( email="" || gender=""){
+            alert("fill in all inputs");
+
+            return false;
+          }else
+
+          return true;
+
+
+        }
+
+
+      </script>
+    </head>
+
+      <body>
+
+        <div class="container">
+        <h1>REGISTRATIO <FORm></FORm></h1>
+        
+        <form action="insert.php" method="post"  onsubmit="return validateForm();">
+
+          <lable for="username">User Name</lable>
+          <input type="text" id="username"><br><br>
+
+                <lable for="Password">Password</lable>
+          <input type="text" id="Password"><br><br>
+
+          <lable for="email">Email</lable>
+          <input type="email" id="email"><br><br>
+
+          <input type="submit" value="submit">
+
+        </form>
+        </div>
+
+      </body>
+  
+  </html>
